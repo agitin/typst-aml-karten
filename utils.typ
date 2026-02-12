@@ -7,5 +7,5 @@
 )
 
 #let checkbox-list(..items) = {
-  items.pos().map(item => box[▢ #item]).join(" ")
+  items.pos().map(item => box[▢ #item]).join("    ")
 }
