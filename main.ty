@@ -1,0 +1,124 @@
+#let today = datetime.today()
+
+#set page(
+  paper: "a6",
+  margin: 10mm,
+  header:
+    grid(
+      columns: (1fr, 1fr),
+      align: (left, right),
+      [Merkhilfe für NFS],
+      [ASB Linz],
+    ),
+  footer: 
+    grid(
+      columns: (1fr, 1fr),
+      align: (left, right),
+      [Stand: #today.display("[day] . [month] . [year]")],
+      context{
+        text(
+          counter(page).display("1"),
+          size: 16pt,
+        )
+      }
+    ),
+)
+
+
+// Atkinson ist eine Schriftart, die speziell für Menschen mit Sehbehinderungen entwickelt wurde. Sie zeichnet sich durch klare Formen und hohe Lesbarkeit aus, was sie ideal für eine gute Unterscheidbarkeit zwischen ähnlichen Buchstaben macht
+#set text(
+  font: "Atkinson Hyperlegible", 
+  size: 9pt,
+  lang: "de",
+)
+
+// Definieren von Auto-Textstilen für Erwachsen/e und Kind/er zur besseren Unterscheidbarkeit
+#show regex("Erwachsen(e)?n?"): name => text(
+  [#name.text],
+  weight: "bold",
+  fill: red, // gemäß ASBÖ AML Farbschema
+)
+#show regex("Kind(er)?"): name => text(
+  [#name.text],
+  weight: "bold",
+  fill: purple, // gemäß ASBÖ AML Farbschema
+)
+
+#show "Kontraindikation": name => text(
+  highlight("Kontraindikation", fill: red, stroke: white),
+  fill: white,
+)
+
+#show "Kontraindikation": name => text(
+  highlight("Kontraindikation", fill: red, stroke: white),
+  fill: white,
+)
+
+#outline(depth: 1)
+
+
+#pagebreak()
+#include "reanimation-erwachsen.ty"
+
+#pagebreak()
+#include "reanimation-kind.ty"
+
+#pagebreak()
+#include "tabelle-kinder-cpr.ty"
+
+#pagebreak()
+#include "allergische-haut-reaktion.ty"
+
+#pagebreak()
+#include "schw-anaphyl-reaktion-nfs.ty"
+
+#pagebreak()
+#include "schw-anaphyl-reaktion-nkv.ty"
+
+#pagebreak()
+#include "schwellung-atemwege.ty"
+
+#pagebreak()
+#include "akuter-bronchospasmus.ty"
+
+#pagebreak()
+#include "hypertensiver-notfall.ty"
+
+#pagebreak()
+#include "hypoglykämie.ty"
+
+#pagebreak()
+#include "hypovolämie.ty"
+
+#pagebreak()
+#include "fieber-krampfanfall.ty"
+
+#pagebreak()
+#include "krampfanfall-erwachsen-nfs.ty"
+
+#pagebreak()
+#include "krampfanfall-erwachsen-nkv.ty"
+
+#pagebreak()
+#include "krampfanfall-kind-nfs.ty"
+
+#pagebreak()
+#include "opiatintoxikation.ty"
+
+#pagebreak()
+#include "ischämischer-thoraxschmerz.ty"
+
+#pagebreak()
+#include "starke-blutung.ty"
+
+#pagebreak()
+#include "schmerzen-nrs-5-nfs.ty"
+
+#pagebreak()
+#include "schmerzen-nrs-5-nkv.ty"
+
+#pagebreak()
+#include "übelkeit-erbrechen.ty"
+
+#pagebreak()
+#include "larynxmaske-cpr.ty"
