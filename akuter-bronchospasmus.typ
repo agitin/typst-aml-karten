@@ -48,3 +48,4 @@ akute Atemnot, erhöhte AF, Atemgeräusche, verlängertes Exspirium
 )
 ]
 → RTW Linz: nur Combivent#super[®] verfügbar und keine Freigabe (unklar?) für Prednisolon für diesen Algorithmus.
+
