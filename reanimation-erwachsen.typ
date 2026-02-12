@@ -6,7 +6,7 @@
 CPR, Atemstillstand
 
 == Kontraindikation
-#box[▢ Unverträglichkeit/Allergie] #box[▢ < 6. LJ] #box[▢ Kreislaufzeichen] #box[▢ Personelle Kapazität nicht ausreichend]
+#checkbox-list[Unverträglichkeit/Allergie][< 6. LJ][Kreislaufzeichen][Personelle Kapazität nicht ausreichend]
 
 == L-Adrenalin i.v. (2 mg / 20 ml)
 - _NICHT_ schockbar → sofortige Gabe

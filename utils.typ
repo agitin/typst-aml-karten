@@ -6,9 +6,6 @@
   size: 10pt,
 )
 
-#let checkbox-list(items) = {
-  items.map(item => box(
-    [☐ #item],
-    width: auto,
-  )).join(h(0.5em))
+#let checkbox-list(..items) = {
+  items.pos().map(item => box[▢ #item]).join(" ")
 }
