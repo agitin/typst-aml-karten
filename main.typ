@@ -3,6 +3,7 @@
 #set page(
   paper: "a6",
   margin: 10mm,
+  numbering: "1",
   header:
     grid(
       columns: (1fr, 1fr),
@@ -37,6 +38,8 @@
   spacing: .8em,
   justify: true,
 )
+
+#set ref(form: "page")
 
 // sorgt für abwechselnd graue und weiße Zeilen in Tabellen, um die Lesbarkeit zu verbessern und Verwechslungsgefahr bei den Dosierungn zu reduzieren
 #set table(

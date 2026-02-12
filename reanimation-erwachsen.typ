@@ -54,7 +54,7 @@ CPR, Atemstillstand
 )
 
 == Elektrolytlösung i.v. (500 ml) #handelsname[Elo-Mel isoton]
-- Einmalig wiederholbar, wenn keine Besserung
+- 1x wiederholbar, wenn keine Besserung
 
 #table(
   columns: (1fr, auto),

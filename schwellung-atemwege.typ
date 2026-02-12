@@ -1,1 +1,1 @@
-= Schwellung der oberen Atemwege
+= Schwellung der oberen Atemwege <schwellung-obere-atemwege>
