@@ -14,7 +14,7 @@
     bottom: if y == 0 { black } else { none },
   ),
 	gutter: 0pt,
-	table.header[Alter][Gewicht][Adrenalin][Amiodaron],
+	table.header[Alter][Gewicht][L-Adrenalin][Amiodaron],
 	table.cell(colspan:2)[> 14 LJ.], table.cell(colspan:2)[Erwachsenen-Reanimation],
 	[14 LJ.], [36 kg], [0,36 mg (3,6 ml)], [180 mg (3,6 ml)],
 	[13 LJ.], [34 kg], [0,34 mg (3,4 ml)], [170 mg (3,4 ml)],

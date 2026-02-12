@@ -17,10 +17,10 @@ Ereignisbezogener Zusammenhang (Insektenstich, Medikamente, Nahrungsmittel, etc.
     align: (left, center),
     stroke: none,
     gutter: 0pt,
-    [Erwachsene], [*0,5 mg*],
-    [Kinder über 12. LJ], [*0,5 mg*],
-    [Kinder 6.–12. LJ.], [*0,3 mg*],
-    [Kinder 3.–6. LJ.], [*0,3 mg*],
+    [Erwachsene], [*0,5 mg* (= 0,5 ml)],
+    [Kinder über 12. LJ], [*0,5 mg* (= 0,5 ml)],
+    [Kinder 6.–12. LJ.], [*0,3 mg* (= 0,3 ml)],
+    [Kinder 3.–6. LJ.], [*0,15 mg* (= 0,15 ml)],
   )
 ]
 → RTW Linz: *AML1*, Epinephrin i.m. *Autoinjektor*, @anaphylaxie-nfs.
@@ -65,7 +65,7 @@ Bei einer zusätzlichen Schwellung der oberen  Atemwege oder Bronchospasmus, gem
   columns: (1fr, auto),
   align: (left, center),
   stroke: none,
-  fill: (x,y) => if (y == 0) or (y == 4) {pat} else {none},
+  fill: (x,y) => if (y == 0) or (y == 4) {pat} else if (y == 2) {rgb("#e7e7e7")} else {none},
   gutter: 0pt,
   [Erwachsene], [*500 mg* = 10 ml],
   [Erwachsene], [→ RTW Linz: *250 mg* = 5 ml],

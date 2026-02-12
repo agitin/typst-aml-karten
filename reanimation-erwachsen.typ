@@ -8,7 +8,7 @@ CPR, Atemstillstand
 == Kontraindikation
 #checkbox-list[Unverträglichkeit/Allergie][< 6. LJ][Kreislaufzeichen][Personelle Kapazität nicht ausreichend]
 
-== L-Adrenalin i.v. (2 mg / 20 ml)
+== Epinephrin i.v. (2 mg / 20 ml)#handelsname[L-Adrenalin]
 - _NICHT_ schockbar → sofortige Gabe
 - schockbar → Gabe nach 3. Schock
 - Wiederholbar alle 2 Analysen oder 3–5 Minuten
