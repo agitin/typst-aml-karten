@@ -34,54 +34,57 @@
 // kompaktere Zeilenabstand und etwas mehr Abstand zwischen den Absätzen für bessere Lesbarkeit
 #set par(
   leading: .5em,
-  spacing: .3em,
+  spacing: .8em,
+  justify: true,
 )
-
-#set heading()
-
-// Definieren von Auto-Textstilen für Erwachsen/e und Kind/er zur besseren Unterscheidbarkeit
-#show regex("Erwachsen(e)?n?"): name => text(
-  [#name.text],
-  weight: "bold",
-  fill: red, // gemäß ASBÖ AML Farbschema
-)
-#show regex("Kind(er)?"): name => text(
-  [#name.text],
-  weight: "bold",
-  fill: purple, // gemäß ASBÖ AML Farbschema
-)
-
-#show "Kontraindikation": name => text(
-  highlight("Kontraindikation", fill: red, stroke: white),
-  fill: white,
-)
-
-#show "Kontraindikation": name => text(
-highlight("Kontraindikation", fill: red),
-  fill: white,
-)
-
-#outline(depth: 1)
 
 // sorgt für abwechselnd graue und weiße Zeilen in Tabellen, um die Lesbarkeit zu verbessern und Verwechslungsgefahr bei den Dosierungn zu reduzieren
 #set table(
   fill: (_, y) => if calc.odd(y) { rgb("#e7e7e7") },
 )
 
-
-#let handelsname(name) = text(
-  [#name®],
-  weight: "thin",
+// Definieren von Auto-Textstilen für Erwachsen/e und Kind/er zur besseren Unterscheidbarkeit
+#show regex("Erwachsen(e)?n?"): name => text(
+  [#name.text],
+  fill: red, // gemäß ASBÖ AML Farbschema
 )
+
+#show regex("Kind(er)?"): name => text(
+  [#name.text],
+  fill: purple, // gemäß ASBÖ AML Farbschema
+)
+
+// #show regex("Wiederholb?ar(e)?"): name => text(
+//   [#name.text],
+//   weight: "bold",
+//   fill: olive, // adjust color as needed
+// )
+
+// #show regex("Wiederholung(en)?"): name => text(
+//   [#name.text],
+//   weight: "bold",
+//   fill: olive, // adjust color as needed
+// )
+
+#show "Kontraindikation": name => text(
+  highlight("Kontraindikation", fill: red, extent: 1pt),
+  fill: white,
+)
+
+// ############################################
+// ################## INHALT ##################
+// ############################################
+
+// Inhaltsverzeichnis
+#v(1fr)
+#outline(depth: 1)
+#v(1fr)
 
 #pagebreak()
 #include "reanimation-erwachsen.typ"
 
 #pagebreak()
-#include "reanimation-kind.typ"
-
-#pagebreak()
-#include "tabelle-kinder-cpr.typ"
+#include "reanimation-kind-tabelle.typ"
 
 #pagebreak()
 #include "allergische-haut-reaktion.typ"

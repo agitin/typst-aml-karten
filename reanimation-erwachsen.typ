@@ -1,26 +1,24 @@
-#import "main.ty": handelsname
+#import "utils.typ": *
 
 = Reanimation
 
 == Indikation
-
 CPR, Atemstillstand
 
 == Kontraindikation
-
-Unverträglichkeit/Allergie
+#box[▢ Unverträglichkeit/Allergie] #box[▢ < 6. LJ] #box[▢ Kreislaufzeichen] #box[▢ Personelle Kapazität nicht ausreichend]
 
 == L-Adrenalin i.v. (2 mg / 20 ml)
 - _NICHT_ schockbar → sofortige Gabe
 - schockbar → Gabe nach 3. Schock
-- alle 2 Analysen oder 3–5 Minuten
+- Wiederholbar alle 2 Analysen oder 3–5 Minuten
 // #table(
 //   columns: (1fr, 1fr, 0.1fr, 1fr,),
 //   align: (left, right, center, left),
 //   stroke: none,
 //   gutter: 0pt,
 //   [Erwachsene], [*1 mg*], "=",  [10 ml],
-//   [Kinder], table.cell(colspan: 3, align: center)[!! *Tabelle* auf der *Rückseite* !!],
+//   [Kinder], table.cell(colspan: 3, align: center)[ Tabelle auf der Rückseite ],
 // )
 #table(
   columns: (1fr, auto),
@@ -28,11 +26,11 @@ Unverträglichkeit/Allergie
   stroke: none,
   gutter: 0pt,
   [Erwachsene], [*1 mg* = 10 ml],
-  [Kinder], [!! *Tabelle* auf der *Rückseite* !!],
+  [Kinder], [ Tabelle auf der Rückseite ],
 )
 
 
-== Amiodaron i.v. (150 mg / 3 ml)
+== Amiodaron i.v. (150 mg / 3 ml) #handelsname[Sedacoron]
 - nach 3. Schock → 1. Dosis
 - nach 5. Schock → 2. Dosis
 - Nachspülen mit 20ml NaCl oder Infusion
@@ -43,25 +41,26 @@ Unverträglichkeit/Allergie
 //   gutter: 0pt,
 //   [Erwachsene (1. Dosis)], [*300 mg*], "=",  [6 ml],
 //   [Erwachsene (2. Dosis)], [*150 mg*], "=",  [3 ml],
-//   [Kinder], table.cell(colspan: 3, align: center)[!! *Tabelle* auf der *Rückseite* !!],
+//   [Kinder], table.cell(colspan: 3, align: center)[ Tabelle auf der Rückseite ],
 // )
 #table(
   columns: (1fr, auto),
   align: (left, center),
   stroke: none,
   gutter: 0pt,
-  [Erwachsene (1. Dosis)], [*300 mg* = 6 ml = 2 Ampullen],
-  [Erwachsene (2. Dosis)], [*150 mg* = 3 ml = 1 Ampulle],
-  [Kinder], [!! *Tabelle* auf der *Rückseite* !!],
+  [Erwachsene – 1. Dosis], [*300 mg* = 6 ml = 2 Ampullen],
+  [Erwachsene – 2. Dosis], [*150 mg* = 3 ml = 1 Ampulle],
+  [Kinder], [ Tabelle auf der Rückseite ],
 )
 
-== Elektrolytlösung i.v. (500 ml)
+== Elektrolytlösung i.v. (500 ml) #handelsname[Elo-Mel isoton]
+- Wiederholbar, wenn keine Besserung
 
 #table(
   columns: (1fr, auto),
   align: (left, right),
   stroke: none,
   gutter: 0pt,
-  [Erwachsene], [*500 ml*],
-  [Kinder], [*250 ml*],
+  [Erwachsene], [*500 ml* (1 Infusion)],
+  [Kinder], [*250 ml* (½ Infusion)],
 )

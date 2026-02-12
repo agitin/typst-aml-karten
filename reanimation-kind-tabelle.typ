@@ -1,8 +1,8 @@
 #import "utils.typ": *
 
 = Reanimation – Kinder-Tabelle
-- *Faustregel:* Für L-Adrenalin und Amiodaron in der Reanimation ist die Dosierung #text(fill: red)[*1 ml je 10 kg KG*], bei den typischen Verdünnungen (Adrenalin: 1 mg / 10 ml, Amiodaron: 150 mg / 3 ml)
-- Die Amiodaron-Dosierung ist bei der Kinder-Reanimation für beide Gaben gleich und wird nicht gesteigert.
+- *Faustregel:* #linebreak()Für L-Adrenalin und Amiodaron in der Reanimation ist die Dosierung #text(fill: red)[*1 ml je 10 kg KG*], bei den typischen Verdünnungen (Adrenalin: 1 mg / 10 ml, Amiodaron: 150 mg / 3 ml)
+- Die Amiodaron-Dosierung ist bei der Kinder-Reanimation für beide Gaben ident und wird nicht gesteigert.
 #v(2em)
 #show table.cell.where(y: 0): strong
 #table(
@@ -10,6 +10,7 @@
 	align: (center, center, center, center),
 	stroke: (x,y) => (
     left: if x == 2 { black } else { none },
+    right: if x == 2 and y >= 2 and y <= 10 { gray } else { none },
     bottom: if y == 0 { black } else { none },
   ),
 	gutter: 0pt,
