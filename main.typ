@@ -94,9 +94,25 @@
 // ############################################
 
 // Formattierung Inhaltsverzeichnis
-#show outline.entry.where(
-  level: 1
-): set block(above: .8em)
+// #show outline.entry.where(level: 1): set block(
+//   above: .8em,
+//   fill: (rgb("#e7e7e7")),
+//   outset: .3em,
+// )
+
+#show outline.entry: it => {
+  let i = counter(outline.entry).get().first()
+
+  link(
+    it.element.location(),
+    block(
+      fill: if calc.odd(i) { rgb("#e7e7e7") } else { none },
+      outset: .3em,
+      above: .8em,
+      it.indented(it.prefix(), it.inner())
+    ),
+  )
+}
 
 // Titel und Inhaltsverzeichnis
 #v(1fr)
