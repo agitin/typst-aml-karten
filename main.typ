@@ -1,3 +1,7 @@
+#set document(
+  title: [AML-Merkhilfe für NFS#linebreak()beim ASB Linz]
+)
+
 #let today = datetime.today()
 
 #set page(
@@ -8,8 +12,8 @@
     grid(
       columns: (1fr, 1fr),
       align: (left, right),
-      [Merkhilfe für NFS],
-      [ASB Linz],
+      [],
+      [],
     ),
   footer: 
     grid(
@@ -25,7 +29,11 @@
     ),
   )
 
-// Atkinson ist eine Schriftart, die speziell für Menschen mit Sehbehinderungen entwickelt wurde. Sie zeichnet sich durch klare Formen und hohe Lesbarkeit aus, was sie ideal für eine gute Unterscheidbarkeit zwischen ähnlichen Buchstaben macht
+#show heading.where(level: 1): it => [
+  #set text(11pt, weight: "bold")
+  #block(upper(it.body))
+]
+// Atkinson ist eine Schriftart für Menschen mit Sehbehinderungen, speziell für klare Formen und hohe Lesbarkeit entwickelt
 #set text(
   font: "Atkinson Hyperlegible", 
   size: 9pt,
@@ -78,13 +86,20 @@
 // ################## INHALT ##################
 // ############################################
 
-// Inhaltsverzeichnis
+// Formattierung Inhaltsverzeichnis
+#show outline.entry.where(
+  level: 1
+): set block(above: .8em)
+
+// Titel und Inhaltsverzeichnis
+#v(1fr)
+#title()
 #v(1fr)
 #outline(depth: 1)
 #v(1fr)
 
 #pagebreak()
-#include "reanimation-erwachsen.typ"
+#include "reanimation.typ"
 
 #pagebreak()
 #include "reanimation-kind-tabelle.typ"

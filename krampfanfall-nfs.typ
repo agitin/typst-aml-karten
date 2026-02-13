@@ -1,6 +1,15 @@
 #import "utils.typ": *
+#set page(
+  header:
+    grid(
+      columns: (1fr, 1fr),
+      align: (left, right),
+      [],
+      NA-alarmierung,
+    ),
+)
 
-= Bestehender zerebr. Krampfanfall – NFS <krampfanfall-nfs>
+= Bestehender zereb. Krampfanfall – NFS <krampfanfall-nfs>
 == Indikation
 plötzliche Bewusstlosigkeit, tonisch-klonische Krämpfe, passagerer Atemstillstand
 

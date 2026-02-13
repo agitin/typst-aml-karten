@@ -1,5 +1,13 @@
-
 #import "utils.typ": *
+#set page(
+  header:
+    grid(
+      columns: (1fr, 1fr),
+      align: (left, right),
+      [],
+      NA-alarmierung,
+    ),
+)
 
 = Ischämischer Thoraxschmerz <ischämischer-thoraxschmerz>
 == Indikation

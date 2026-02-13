@@ -1,6 +1,14 @@
 #import "utils.typ": *
-
-= Schwere anaphylaktische Reaktion – NFS <anaphylaxie-nfs>
+#set page(
+  header:
+    grid(
+      columns: (1fr, 1fr),
+      align: (left, right),
+      [],
+      NA-alarmierung,
+    ),
+)
+= Schwere anaphylakt. Reaktion – NFS <anaphylaxie-nfs>
 == Indikation
 Ereignisbezogener Zusammenhang (Insektenstich, Medikamente, Nahrungsmittel, etc.), Schwere Atemnot, Stridor, Bronchospasmus, Schocksymptome
 

@@ -1,4 +1,13 @@
 #import "utils.typ": *
+#set page(
+  header:
+    grid(
+      columns: (1fr, 1fr),
+      align: (left, right),
+      [],
+      NA-alarmierung,
+    ),
+)
 
 = Schwere anaphylakt. Reaktion – NKV
 == Indikation
@@ -28,7 +37,11 @@ Ereignisbezogener Zusammenhang (Insektenstich, Medikamente, Nahrungsmittel, etc.
 == Eventuell: Epinephrin, inhalativ
 Bei einer zusätzlichen Schwellung der oberen  Atemwege oder Bronchospasmus, gem. AML1 auf @schwellung-obere-atemwege.
 
+#v(1fr)
+#h(1fr)→ *Fortsetzung auf der nächsten Seite!*#h(1fr)
+#v(1fr)
 
+#box[
 == 2. Elektrolytlösung i.v. (500 ml) #handelsname[Elo-Mel isoton]
 - 1x wiederholbar, wenn keine Besserung
 
@@ -40,10 +53,7 @@ Bei einer zusätzlichen Schwellung der oberen  Atemwege oder Bronchospasmus, gem
   [Erwachsene], [*500 ml* (1 Infusion)],
   [Kinder], [*250 ml* (½ Infusion)],
 )
-#v(1fr)
-#h(1fr)→ *Fortsetzung auf der nächsten Seite!*#h(1fr)
-#v(1fr)
-
+]
 #box[
 == 3. Diphenhydramin i.v.#linebreak() (30 mg / 2 ml) #handelsname[Dibondrin]
 - Einmalanwendung

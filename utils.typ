@@ -19,7 +19,6 @@
   #place(line(stroke: gray, start: (100%, 50%), end: (50%, 100%)))
   #place(line(stroke: gray, start: (0%, 50%), end: (50%, 100%)))
 ]
-
 #let crossed(content) = {
   set table(
     fill: (_, y) => none,
@@ -29,6 +28,22 @@
     inset: .5em,
     outset: .1em,
     content
+  )
+}
+
+#let NA-alarmierung = {
+  box(
+    stroke: 1pt + red,
+    outset: .3em,
+    text("Notarzt alarmieren", weight: "bold", fill: red,)
+  )
+}
+
+#let NA-erwägen = {
+  box(
+    stroke: 1pt + olive,
+    outset: .3em,
+    text("Notarzt erwägen", weight: "bold", fill: olive,)
   )
 }
 

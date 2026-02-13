@@ -1,8 +1,17 @@
 #import "utils.typ": *
+#set page(
+  header:
+    grid(
+      columns: (1fr, 1fr),
+      align: (left, right),
+      [],
+      NA-erwägen,
+    ),
+)
 
 = Akuter Bronchospasmus <akuter-bronchospasmus>
 == Indikation
-akute Atemnot, erhöhte AF, Atemgeräusche, verlängertes Exspirium
+Dyspnoe, erhöhte AF, Atemgeräusche, verlängertes Exspirium
 
 == Kontraindikation
 #checkbox-list[Unverträglichkeit/Allergie][für Combivent#super[®]: unter 18.LJ][für Erwachsene: HF>140][für Combivent#super[®]: Combivent#super[®] in d. letzten 4h eingenommen]

@@ -1,4 +1,13 @@
 #import "utils.typ": *
+#set page(
+  header:
+    grid(
+      columns: (1fr, 1fr),
+      align: (left, right),
+      [],
+      NA-erwägen,
+    ),
+)
 
 = Fieber mit Krampfanfall <fieber-krampfanfall>
 == Indikation
