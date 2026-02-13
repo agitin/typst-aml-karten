@@ -6,7 +6,7 @@ RR#sub[sys] > 200 mmHg mit Symptomatik aber ohne Auffälligkeiten im FAST+: AP, 
 Bei Auffälligkeiten im FAST+ erst ab RR#sub[sys] > 220 mmHg.
 
 == Kontraindikation
-#checkbox-list[Unverträglichkeit/Allergie][Kinder]
+#checkbox-list[Unverträglichkeit/Allergie][Kind]
 
 == Urapidil i.v. (25 mg / 5 ml) #handelsname[Ebrantil]
 - Alle 5 Minuten nach Kontroll-Messung bis zu 4x wiederholbar, also in Summe bis max. 25 mg / 5 ml

@@ -7,7 +7,7 @@ Fieber >38,5 °C, Fieberkrampfanamnese (rezent oder nicht rezent)
 == Kontraindikation
 #checkbox-list[Unverträglichkeit/Allergie][Einnahme in den letzten 6h][< 6. LM]
 
-== Paracetamol rektal (250 mg / 125 mg) #handelsname[Mexalen]
+== Paracetamol rektal (250 mg, 125 mg) #handelsname[Mexalen]
 - Einmalanwendung
 - Zäpfchen
 

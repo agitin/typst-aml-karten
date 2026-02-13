@@ -1,1 +1,0 @@
-= Krampfanfall Erwachsen – NKV

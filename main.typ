@@ -43,7 +43,7 @@
 
 // sorgt für abwechselnd graue und weiße Zeilen in Tabellen, um die Lesbarkeit zu verbessern und Verwechslungsgefahr bei den Dosierungn zu reduzieren
 #set table(
-  fill: (_, y) => if calc.odd(y) { rgb("#e7e7e7") },
+  fill: (_, y) => if calc.even(y) { rgb("#e7e7e7") },
 )
 
 // Definieren von Auto-Textstilen für Erwachsen/e und Kind/er zur besseren Unterscheidbarkeit
@@ -52,7 +52,7 @@
   fill: red, // gemäß ASBÖ AML Farbschema
 )
 
-#show regex("Kind(er)?"): name => text(
+#show regex("Kinder") : name => text(
   [#name.text],
   fill: purple, // gemäß ASBÖ AML Farbschema
 )
@@ -117,13 +117,10 @@
 #include "fieber-krampfanfall.typ"
 
 #pagebreak()
-#include "krampfanfall-erwachsen-nfs.typ"
+#include "krampfanfall-nfs.typ"
 
 #pagebreak()
-#include "krampfanfall-erwachsen-nkv.typ"
-
-#pagebreak()
-#include "krampfanfall-kind-nfs.typ"
+#include "krampfanfall-nkv.typ"
 
 #pagebreak()
 #include "opiatintoxikation.typ"
