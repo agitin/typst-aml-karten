@@ -29,10 +29,17 @@
     ),
   )
 
+// Überschrifte nanpassen
 #show heading.where(level: 1): it => [
   #set text(11pt, weight: "bold")
   #block(upper(it.body))
 ]
+
+#show heading.where(level: 2): it => [
+  #set text(10pt, weight: "bold")
+  #block(it.body)
+]
+
 // Atkinson ist eine Schriftart für Menschen mit Sehbehinderungen, speziell für klare Formen und hohe Lesbarkeit entwickelt
 #set text(
   font: "Atkinson Hyperlegible", 
@@ -77,10 +84,10 @@
 //   fill: olive, // adjust color as needed
 // )
 
-#show "Kontraindikation": name => text(
-  highlight("Kontraindikation", fill: red, extent: 1pt),
-  fill: white,
-)
+// #show "Kontraindikation": name => text(
+//   highlight("Kontraindikation", fill: red, extent: 1pt),
+//   fill: white,
+// )
 
 // ############################################
 // ################## INHALT ##################

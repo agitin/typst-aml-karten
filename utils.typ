@@ -7,7 +7,7 @@
 )
 
 #let checkbox-list(..items) = {
-  items.pos().map(item => box[▢ #item]).join("    ")
+  items.pos().map(item => box[#text(red)[▢ #item]]).join("    ")
 }
 
 // Diese Funktion (crossed) erstellt einen Block mit einem Kreuzmuster-Hintergrund (pat), für AML-Anwendungen die in Linz am RTW nicht verfügbar/nicht freigegeben sind. Zusätzlich wird die Tabellenfüllung für diesen Block auf "none" gesetzt, um sicherzustellen, dass die Kreuzmuster-Füllung sichtbar bleibt.
@@ -33,17 +33,17 @@
 
 #let NA-alarmierung = {
   box(
-    stroke: 1pt + red,
+    stroke: 1pt + black,
     outset: .3em,
-    text("Notarzt alarmieren", weight: "bold", fill: red,)
+    [*Notarzt *] + text("alarmieren", weight: "bold", fill: red,)
   )
 }
 
 #let NA-erwägen = {
   box(
-    stroke: 1pt + olive,
+    stroke: 1pt + black,
     outset: .3em,
-    text("Notarzt erwägen", weight: "bold", fill: olive,)
+    [*Notarzt *] + text("erwägen", weight: "bold", fill: olive,)
   )
 }
 
