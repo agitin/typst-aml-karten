@@ -141,4 +141,7 @@
 #include "übelkeit-erbrechen.typ"
 
 #pagebreak()
+#include "sedo-analgesie.typ"
+
+#pagebreak()
 #include "larynxmaske-cpr.typ"

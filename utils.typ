@@ -26,6 +26,7 @@
   )
   block(
     fill: pat,
+    inset: .5em,
     outset: .1em,
     content
   )
