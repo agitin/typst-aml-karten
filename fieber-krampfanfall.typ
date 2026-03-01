@@ -14,17 +14,17 @@
 Fieber >38,5 °C, Fieberkrampfanamnese (rezent oder nicht rezent)
 
 == Kontraindikation
-#checkbox-list[Unverträglichkeit/Allergie][Einnahme in den letzten 6h][< 6. LM]
+#checkbox-list[Einnahme in den letzten 6h][unter 6. Lebensmonat][Unverträglichkeit/Allergie]
 
-== Paracetamol rektal (250 mg, 125 mg) #handelsname[Mexalen]
+== #embeddedCircledNumber(1) Paracetamol rektal #handelsname[Mexalen]
 - Einmalanwendung
-- Zäpfchen
+- Zäpfchen (250 mg oder 125 mg)
 
 #table(
   columns: (1fr, auto),
   align: (left, right),
   stroke: none,
   gutter: 0pt,
-  [Kinder 2.–8. LJ], [*250 mg* (Packung #highlight[gelb] markiert)],
+  [Kinder 2.–8. LJ], [*250 mg* (#highlight(fill: yellow.transparentize(50%))[gelb] markiert)],
   [Kinder 6. LM– 2. LJ], [*125 mg*],
 )

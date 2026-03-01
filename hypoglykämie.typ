@@ -14,10 +14,11 @@
 Bewusstseinsstörung mit BZ unter 50 mg/dl
 
 == Kontraindikation
-#checkbox-list[Unverträglichkeit/Allergie][< 6. LJ]
+#checkbox-list[Unverträglichkeit/Allergie][unter 6. LJ]
 
-== Glucose i.v. (20% = 200 mg/ml)
-- Wiederholung, bis adäquater BZ-Spiegel erreicht ist
+== #embeddedCircledNumber(1) Glucose i.v. (20% = 200 mg/ml)
+- Wiederholbar bis Zustandsverbesserung
+- Dosierungsangaben nur gültig für 20%ige Glucose, bei 10%iger Glucose Verdopplung des Volumens
 
 #table(
   columns: (1fr, auto),
@@ -27,4 +28,3 @@ Bewusstseinsstörung mit BZ unter 50 mg/dl
   [Erwachsene], [*20 g* = 100 ml],
   [Kinder], [*10 g* = 50 ml],
 )
-→ RTW Linz: nur 20%ige Glucose verfügbar, bei 10%iger Glucose wäre es das doppelte Volumen.

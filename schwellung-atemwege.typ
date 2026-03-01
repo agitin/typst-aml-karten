@@ -17,34 +17,18 @@ Schwellung der oberen Atemwege (Stridor, Atemnot, ...)
 == Kontraindikation
 #checkbox-list[Unverträglichkeit/Allergie]
 
-#crossed[
-  == Epinephrin inhal. (1 mg / 1 ml) #handelsname[Suprarenin]
-  - 1x wiederholbar, nach 5 Minuten, wenn keine Besserung
-  - Gabe über O#sub[2]-Verneblermaske
-
-  #table(
-    columns: (1fr, auto),
-    align: (left, center),
-    stroke: none,
-    gutter: 0pt,
-    [Erwachsene], [*5 mg* (= 5 ml)],
-    [Kinder über 30 kg KG], [*5 mg* (= 5 ml)],
-    [Kinder 15–30 kg KG], [*4 mg* (= 4 ml)],
-    [Kinder unter 15 kg KG], [*3 mg* (= 3 ml)],
-  )
-]
-→ RTW Linz: nur in Verdünnung 1 mg / 10 ml verfügbar
-
-== → Epinephrin inhal. (1 mg / 10 ml) #handelsname[L-Adrenalin]
+== #embeddedCircledNumber(1) Epinephrin inhal. (1 mg/1 ml) #handelsname[Suprarenin]
 - 1x wiederholbar, nach 5 Minuten, wenn keine Besserung
 - Gabe über O#sub[2]-Verneblermaske
+- *Linz*: Maximaldosis 3 mg (= 3 ml)
 
 #table(
   columns: (1fr, auto),
-  align: (left, center),
+  align: (left, right),
   stroke: none,
   gutter: 0pt,
-  [Erwachsene], [*1 mg* (=10 ml)],
-  [Kinder über 15 kg KG / 3. LJ], [*1 mg* (=10 ml)],
-  [Kinder unter 15 kg KG / 3. LJ], [*0,5 mg* (=5 ml)],
+  [Erwachsene], [*5 mg* (= 5 ml)],
+  [Kinder über 30 kg KG], [*5 mg* (= 5 ml)],
+  [Kinder 15–30 kg KG], [*4 mg* (= 4 ml)],
+  [Kinder unter 15 kg KG], [*3 mg* (= 3 ml)],
 )

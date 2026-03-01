@@ -1,49 +1,33 @@
 #set document(
-  title: [AML-Merkhilfe für NFS#linebreak()beim ASB Linz]
+  title: [AML-Merkhilfe für NFS]
 )
 
-#let today = datetime.today()
+#let today = datetime(
+  year: 2026,
+  month: 03,
+  day: 01,
+)
 
 #set page(
   paper: "a6",
-  margin: 10mm,
-  numbering: "1",
-  header:
-    grid(
-      columns: (1fr, 1fr),
-      align: (left, right),
-      [],
-      [],
-    ),
-  footer: 
-    grid(
-      columns: (1fr, 1fr),
-      align: (left, right),
-      [Stand: #today.display("[day].[month].[year]")],
-      context{
-        text(
-          counter(page).display("1"),
-          size: 16pt,
-        )
-      }
-    ),
-  )
+  margin: (x:8mm, y:10mm),
+)
 
-// Überschrifte nanpassen
+// Überschriften anpassen
 #show heading.where(level: 1): it => [
-  #set text(11pt, weight: "bold")
+  #set text(12pt, weight: "bold")
   #block(upper(it.body))
 ]
 
 #show heading.where(level: 2): it => [
-  #set text(10pt, weight: "bold")
+  #set text(11pt, weight: "bold")
   #block(it.body)
 ]
 
 // Atkinson ist eine Schriftart für Menschen mit Sehbehinderungen, speziell für klare Formen und hohe Lesbarkeit entwickelt
 #set text(
   font: "Atkinson Hyperlegible", 
-  size: 9pt,
+  size: 11pt,
   lang: "de",
 )
 
@@ -67,27 +51,74 @@
   fill: red, // gemäß ASBÖ AML Farbschema
 )
 
-#show regex("Kinder") : name => text(
-  [#name.text],
+#show regex("Kinder(n)?") : name => text(
+  [#name],
   fill: purple, // gemäß ASBÖ AML Farbschema
 )
 
-// #show regex("Wiederholb?ar(e)?"): name => text(
-//   [#name.text],
-//   weight: "bold",
-//   fill: olive, // adjust color as needed
-// )
+#show regex("(?i)(\d+x\s)?Wiederholb?ar(e)?"): name => text(
+  [#name.text],
+  weight: "bold",
+  fill: olive, // adjust color as needed
+)
 
-// #show regex("Wiederholung(en)?"): name => text(
-//   [#name.text],
-//   weight: "bold",
-//   fill: olive, // adjust color as needed
-// )
+#show "Kontraindikation": name => text(
+  highlight("Kontraindikation", fill: red, extent: 1pt),
+  fill: white,
+)
 
-// #show "Kontraindikation": name => text(
-//   highlight("Kontraindikation", fill: red, extent: 1pt),
-//   fill: white,
-// )
+// ############################################
+// ################## Deckblatt ##################
+// ############################################
+#set page(
+  numbering: none,
+  footer: 
+    grid(
+      columns: (1fr),
+      align: (center),
+      [Stand: #today.display("[day].[month].[year]")],
+    ),
+)
+
+#align(center + horizon)[
+  // Add your image here and adjust the width as needed
+  #image("star_of_life.svg", width: 50%)
+  
+  // Add vertical space between the image and the text
+  #v(2em) 
+  
+  // Add your text below the image
+  #text(size: 24pt, weight: "bold")[AML Merkhilfe]
+  
+  #v(0.6em)
+  #text(size: 16pt)[Inoffiziell, privat erstellt]#linebreak()
+  #text(size: 13pt)[Nutzung ausschließlich auf eigenes Risiko]
+]
+
+#pagebreak()
+#set page(
+  numbering: "1",
+  header: 
+    grid(
+        columns: (1fr, 1fr),
+        align: (left, right),
+        [],
+        [],
+    ),
+  footer: 
+    grid(
+      columns: (1fr, 1fr),
+      align: (left, right),
+      [Stand: #today.display("[day].[month].[year]")],
+      context{
+        text(
+          counter(page).display("1"),
+          size: 16pt,
+        )
+      }
+    ),
+  )
+#counter(page).update(1)
 
 // ############################################
 // ################## INHALT ##################
@@ -115,17 +146,17 @@
 }
 
 // Titel und Inhaltsverzeichnis
-#v(1fr)
-#title()
-#v(1fr)
-#outline(depth: 1)
+#outline(
+  title:"Inhalt",
+  depth: 1
+)
 #v(1fr)
 
 #pagebreak()
-#include "reanimation.typ"
+#include "reanimation-erwachsen.typ"
 
 #pagebreak()
-#include "reanimation-kind-tabelle.typ"
+#include "reanimation-kind.typ"
 
 #pagebreak()
 #include "allergische-haut-reaktion.typ"
@@ -169,17 +200,17 @@
 #pagebreak()
 #include "starke-blutung.typ"
 
-#pagebreak()
-#include "schmerzen-nrs-5-nfs.typ"
+//#pagebreak()
+//#include "schmerzen-nrs-5-nfs.typ"
 
-#pagebreak()
-#include "schmerzen-nrs-5-nkv.typ"
+//#pagebreak()
+//#include "schmerzen-nrs-5-nkv.typ"
 
 #pagebreak()
 #include "übelkeit-erbrechen.typ"
 
-#pagebreak()
-#include "sedo-analgesie.typ"
+//#pagebreak()
+//#include "sedo-analgesie.typ"
 
 #pagebreak()
 #include "larynxmaske-cpr.typ"
