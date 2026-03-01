@@ -6,8 +6,10 @@
   size: 10pt,
 )
 
+#let skip = sym.zwj
+
 #let checkbox-list(..items) = {
-  items.pos().map(item => box[#text(red)[▢ #item]]).join("    ")
+  items.pos().map(item => box[#text(red)[▢ #item]]).join([#linebreak()])
 }
 
 // Diese Funktion (crossed) erstellt einen Block mit einem Kreuzmuster-Hintergrund (pat), für AML-Anwendungen die in Linz am RTW nicht verfügbar/nicht freigegeben sind. Zusätzlich wird die Tabellenfüllung für diesen Block auf "none" gesetzt, um sicherzustellen, dass die Kreuzmuster-Füllung sichtbar bleibt.
@@ -47,3 +49,25 @@
   )
 }
 
+#let circledNumber(number) = {
+  circle(height:1.1em)[
+    #set align(center + horizon)
+    #number
+  ]
+}
+
+#let numberedText(nummer, content) = {
+  context box(
+    height: measure[.].height,
+    align(horizon, circledNumber(nummer))
+  ) 
+  [ ] + content
+}
+
+#let embeddedCircledNumber(nummer) = {
+  context box(
+    height: measure[.].height,
+    align(horizon, circledNumber(nummer))
+  ) 
+  [ ]
+}
