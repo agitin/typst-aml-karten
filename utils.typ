@@ -56,14 +56,6 @@
   ]
 }
 
-#let numberedText(nummer, content) = {
-  context box(
-    height: measure[.].height,
-    align(horizon, circledNumber(nummer))
-  ) 
-  [ ] + content
-}
-
 #let embeddedCircledNumber(nummer) = {
   context box(
     height: measure[.].height,
