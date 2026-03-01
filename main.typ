@@ -82,7 +82,7 @@
 
 #align(center + horizon)[
   // Add your image here and adjust the width as needed
-  #image("asb-logo.svg", width: 50%)
+  #image("star_of_life.svg", width: 50%)
   
   // Add vertical space between the image and the text
   #v(2em) 
