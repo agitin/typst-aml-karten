@@ -14,9 +14,9 @@
 Anamnese (z.B. Blutverlust, Flüssigkeitsmangel, rel. Volumenmangel, BZ > 300 mg/dl), Klinisches Bild (Blässe, Kaltschweiß, Tachykardie, Bewusstseinsstörung)
 
 == Kontraindikation
-#checkbox-list[Unverträglichkeit/Allergie][< 6. LJ][Lungenödem]
+#checkbox-list[Lungenödem][Unverträglichkeit/Allergie][unter 6. LJ]
 
-== Elektrolytlösung i.v. (500 ml) #handelsname[Elo-Mel isoton]
+== #embeddedCircledNumber(1) Elektrolytlösung i.v. #handelsname[Elo-Mel isoton]
 - 1x wiederholbar, wenn keine Besserung
 
 #table(

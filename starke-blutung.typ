@@ -14,13 +14,12 @@
 Hämorrhagischer Präschock oder Schock, starke Blutung (traumatisch, Tonsillennachblutung, postpartale Blutung)
 
 == Kontraindikation
-#checkbox-list[Unverträglichkeit/Allergie][< 6. LJ][Schwangerschaft][Akute Thrombose/Embolie][Gastrointestinale Blutung]
+#checkbox-list[Schwangerschaft][Akute Thrombose/Embolie][Gastrointestinale Blutung][Unverträglichkeit/Allergie][unter 6. LJ]
 
-== Tranexamsäure i.v. (500 mg / 5 ml) #handelsname[AMCHA]
+== #embeddedCircledNumber(1) Tranexamsäure i.v. (500 mg/5 ml) #handelsname[AMCHA]
 - Einmalanwendung
 - langsame Gabe: 1 ml/min oder in Kurzinfusion (=100 ml) über mind. 10 min
-- *Faustregel* für 6.-12. LJ: *Alter in LJ / 2 = ml*
-
+- *Faustregel* für 6.-12. LJ: #underline[Alter in LJ/2 = ml]
 
 #table(
   columns: (1fr, auto),
@@ -28,5 +27,5 @@ Hämorrhagischer Präschock oder Schock, starke Blutung (traumatisch, Tonsillenn
   stroke: none,
   gutter: 0pt,
   [Erwachsene], [*1 g* (= 1.000 mg = 10 ml)],
-  [Kinder], [*15 mg / kg KG*],
+  [Kinder], [*15 mg/kg KG*],
 )

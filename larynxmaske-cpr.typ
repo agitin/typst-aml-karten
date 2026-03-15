@@ -1,19 +1,10 @@
+#import "utils.typ": *
 = Larynxmaske bei CPR
-#set text(size: 12pt)
 
-+ Letzte Analyse abfragen (ausr. Zeit?)
-+ Vorbereitung
-  - Beatmungsbeutel
-  - Larynxmaske + NaCL
-    - Gr. 4: 50 – 70 kg
-    - Gr. 5: 70 – 100 kg
-  - Beatmungsfilter
-  - Kapno-Adapter
-  - Magensonde + Beutel
-  - Fixierungsband
-  - Blockerspritze
-  - Cuffdruckmesser
-+ #text(fill: rgb("#a50000"))[Roten Stopfen entfernen]
+== Ablauf & Checkliste
++ Letzte Analyse abfragen (ausreichend Zeit?)
++ Vorbereitung #linebreak()
+  #checkbox-list[Beatmungsbeutel][Larynxmaske + NaCL][Beatmungsfilter][Kapno-Adapter][Magensonde + Beutel][Fixierungsband][Blockerspritze][Cuffdruckmesser]
 + Platzierung LMA
 + Probebeatmung
 + Kapnometrie anschließen

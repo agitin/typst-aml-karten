@@ -9,26 +9,26 @@
     ),
 )
 
-= Allergische Reaktion/Hautreaktion
+= Allergische (Haut-)Reaktion
 == Indikation
 Generalisierte Hautreaktion (Rötung, Quaddeln), Juckreiz
 
 == Kontraindikation
-#checkbox-list[Unverträglichkeit/Allergie][für Diphenhydramin: < 18 kg][< 6. LJ]
+#checkbox-list[Gewicht/Alter je nach Arzneimittel][Unverträglichkeit/Allergie][unter 6. LJ]
 
-== Diphenhydramin i.v. (30 mg / 2 ml) #handelsname[Dibondrin]
+== #embeddedCircledNumber(1) Diphenhydramin i.v. (30 mg/2 ml) #handelsname[Dibondrin]
 - Einmalanwendung
 
 #table(
   columns: (1fr, auto),
-  align: (left, center),
+  align: (left, right),
   stroke: none,
   gutter: 0pt,
   [Erwachsene], [*30 mg* = 2 ml],
   [Kinder über 18 kg KG], [*30 mg* = 2 ml],
 )
 
-== Elektrolytlösung i.v. (500 ml) #handelsname[Elo-Mel isoton]
+== #embeddedCircledNumber(2) Elektrolytlösung i.v. #handelsname[Elo-Mel isoton]
 - Einmalanwendung
 
 #table(

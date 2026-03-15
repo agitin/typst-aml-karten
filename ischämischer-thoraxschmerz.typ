@@ -14,12 +14,12 @@
 Thorakaler Druck oder Schmerz, ausstrahlende Schmerzen (Kiefer, Hals, Rücken, Oberbauch, linker Arm)
 
 == Kontraindikation
-#checkbox-list[Unverträglichkeit/Allergie][Einnahme in den letzten 24h][Aktive Blutung][Kind][durch Schmerzmittel ausgelöstes Asthma bronchiale]
+#checkbox-list[Einnahme in den letzten 24h][Aktive Blutung][Kind][durch Schmerzmittel ausgel. Asthma bronchiale][Unverträglichkeit/Allergie]
 
-== Acetylsalicylsäure p.o. (500 mg) #handelsname[Aspirin]
+== #embeddedCircledNumber(1) Acetylsalicylsäure p.o. #handelsname[Aspirin]
 - Einmalanwendung
-- mittig zerbrechen, und die halbe Tablette verabreichen
-- Anleitung im Mund zu zerkauen und nicht zu schlucken
+- mittig zerbrechen, halbe Tablette verabreichen
+- Patient*in anleiten, Tablette im Mund zu zerkauen und nicht zu schlucken
 
 #table(
   columns: (1fr, auto),
@@ -28,18 +28,3 @@ Thorakaler Druck oder Schmerz, ausstrahlende Schmerzen (Kiefer, Hals, Rücken, O
   gutter: 0pt,
   [Erwachsene], [*250 mg* (= ½ Kautablette)],
 )
-
-#crossed[
-== Acetylsalicylsäure i.v. (500 mg Pulver)
-- Einmalanwendung
-- Pulver auflösen und halbe Menge verabreichen
-
-#table(
-  columns: (1fr, auto),
-  align: (left, right),
-  stroke: none,
-  gutter: 0pt,
-  [Erwachsene], [*250 mg* (= ½ Ampulle)],
-)
-]
-→ RTW Linz: nur Acetylsalicylsäure p.o. verfügbar
