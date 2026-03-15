@@ -11,6 +11,10 @@
 #set page(
   paper: "a6",
   margin: (x:8mm, y:10mm),
+  foreground: rotate(-55deg,
+  text(50pt, fill: rgb("#ffcbc441"))[
+    *UNGEPRÜFT*
+  ])
 )
 
 // Überschriften anpassen
