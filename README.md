@@ -1,5 +1,9 @@
 # Inoffizielle AML Merkhilfe
 
+## Zweckbestimmung
+Im Rettungsdienst in Österreich sind abhängig von der Organisation für Notfallsanitäter*innen unterschiedlicher Ausbildungsstufen eine große Bandbreite an Medikamenten unter Auflagen für die Anwendung (Chefärztliche Algorithmen) freigegeben. Diese Algorithmen sind oft nicht in einem Format verfügbar, welches einen Einsatz entlang moderner CRM-Ansätzen ermöglicht (z.B. einfache Struktur die auch im Stress die wichtigste Information fehlersicher ablesbar macht).
+Dieses Projekt strebt daher an, diese Algorithmen, fokusiert auf & startend mit jenen des ASBÖ Linz, dahingehend (in der Darstellung) aufzubereiten.
+
 ## Haftungsausschluss
 Dieses Projekt ist __privat__ und garantiert weder die Vollständigkeit noch die Richtigkeit der Angaben. Eine Nutzung erfolgt __ausschließlich auf eigene Verantwortung__! Die Ersteller sowie Mitarbeiter dieses Projekts übernehmen keinerlei Veranwortung.
 
