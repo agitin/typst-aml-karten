@@ -248,16 +248,18 @@ Ist aber ein*e ordentliche*r und gewissenhafte*r Notfallsanitäter*in anwesend, 
 
 Weiter wird angenommen, dass die anwendenden Notfallsanitäter*innen im Zuge ihrer Ausbildung bzw. Fortbildung die relevanten AML-Algorithmen erlernt haben. Das bedeutet, dass zwar insb. detaillierte Inidkationen/Kontraindikationen oder Dosierungen die z.B. auf einer Merkhilfe aufgeführt werden im Einsatzfall unhinterfragt übernommen werden, die handelnden Personen aber die grundlegenden (patho-)physiologischen und pharmakologischen hinter den Wirkstoffen kennen und daher auch gravierende Fehler in einem Dokument (z.B. Epinephrin i.v. außerhalb des Reanimationssettings) erkennen können.
 
+Ebenso 
+
 ====  Bewertung des Schadensausmaßes
-- #riskrating("A1") - Kurzzeitiges Unwohlsein oder leichter Schmerz, NRS <=3
-- #riskrating("A2") - Vorübergehendes Unwohlsein oder Schmerzen <= 5
-- #riskrating("A3") - reversibles Unwohlsein, reversible Gesundheitsbeeinträchtigung oder Schmerzen >= 6
-- #riskrating("A4") - reversible schwerwiegende Gesundheitsbeeinträchtigung
-- #riskrating("A5") - Tod, irreversible schwerwiegende Gesundheitsbeeinträchtigung
+- #riskrating("A1") - Kurzzeitiges Unwohlsein oder leichter Schmerz NRS <=3
+- #riskrating("A2") - Vorübergehendes Unwohlsein oder Schmerzen NRS 4-5
+- #riskrating("A3") - Reversibles Unwohlsein oder  starke Schmerzen NRS 6-8, vollständig reversible Gesundheitsbeeinträchtigung
+- #riskrating("A4") - Reversible schwerwiegende Gesundheitsbeeinträchtigung, irreversible geringfügige Gesundheitsbeeinträchtigung oder stärkste Schmerzen NRS 9-10
+- #riskrating("A5") - Tod, irreversible (schwerwiegende) Gesundheitsbeeinträchtigung
 
 ==== Bewertung der Eintrittswahrscheinlichkeit (TODO)
 - #riskrating("W1") - Noch nie passiert/Eintritt unplausibel
-- #riskrating("W2") - Unwahrschienlich aber vorstellbar
+- #riskrating("W2") - Unwahrscheinlich aber vorstellbar
 - #riskrating("W3") - Möglich, aber nicht üblich, >= 2 %
 - #riskrating("W4") - Ist schon passiert, wird wieder passieren, >= 10 %
 - #riskrating("W5") - passiert regelmäßig, >= 30%
@@ -275,17 +277,78 @@ Anschließend werden für Fehler mit inakzeptablem Risiko mögliche Mitigationsm
 
 Als Grundprinzip gilt: Eine einzelne Mitigationsmaßnahme kann entweder die Eintrittswahrscheinlichkeit oder das Schadensausmaß um eine Stufe senken. Wird von diesem Prinzip abgewichen, muss dies begründet werden.
 
-Obwohl das Ziel immer eine weitestmögliche Risikoreduktion ist, gelten Risiken mit einer Risikoziffer
+Die Sinnhaftigkeit einer Mitigationsmaßnahme begründet sich nicht ausschließlich aus der erreichten Risikoreduktion. Eine Maßnahme kann die Auftrittswahrscheinlichkeit oder das Schadensausmaß nur in einem so geringfügigen Ausmaß reduzieren, dass keine Reduktion der Bewertung möglich ist, aber dennoch für eine strukturelle Verbesserung bedeuten.
 
-- ≤ 6 als bedingt akzeptabel (v.a. wenn mögliche weitere Mitigationsmaßnahmen unverhältnismäßig wären und eine schlüssige Argumentation vorgeführt werden kann), und 
+=== Akzeptables Restrisiko
+Obwohl das Ziel immer eine weitestmögliche Risikoreduktion ist, gelten Risiken mit einer Risikoziffer ≤ 4 als akzeptabel.
 
-- ≤ 4 als akzeptabel.
+Ein Restrisiko von 4 kann über die folgenden Kombinationen entstehen:
+#table(
+    columns: (1fr, auto, auto, auto),
+    align: (x,y) => if x>0 {left + horizon} else if y==0 {left + horizon} else {left + top},
+    stroke: none,
+    gutter: 0pt,
 
-Ergänzend zu erwähnen ist, dass eine Mitigationsmaßnahme ihre Sinnhaftigkeit nicht ausschließlich aus der erreichten Risikoreduktion begründet. Eine Maßnahme kann die Auftrittswahrscheinlichkeit oder das Schadensausmaß nur in einem so geringfügigen Ausmaß reduzieren, dass keine Reduktion der Bewertung möglich ist, aber dennoch für eine strukturelle Verbesserung bedeuten.
+    [Verbleibendes Restrisiko nach Mitigationsmaßnahmen],
+    [#riskrating("A1")], [#riskrating("W4")], [#riskrating(4)],
+)
+
+Lt. Definition entspricht dies kurzzeitigem Unwohlsein oder leichtem Schmerz NRS <=3 das/der bei >= 10% der Fälle auftritt. Im Rettungsdienst setzen wir häufig Maßnahmen die mit kurzzeitigem Unwohlsein oder leichten Schmerzen einhergehen (z.B. das Legen einer Venenverweilkanüle, Blutzuckermessung, Stiegentransport), daher ist dieses Risiko als akzeptabel bewertet.
+
+#table(
+    columns: (1fr, auto, auto, auto),
+    align: (x,y) => if x>0 {left + horizon} else if y==0 {left + horizon} else {left + top},
+    stroke: none,
+    gutter: 0pt,
+
+    [Verbleibendes Restrisiko nach Mitigationsmaßnahmen],
+    [#riskrating("A4")], [#riskrating("W1")], [#riskrating(4)],
+)
+
+Lt. Definition enspricht dies einer reversiblen schwerwiegenden Gesundheitsbeeinträchtigung, irreversiblen geringfügige Gesundheitsbeeinträchtigung oder stärksten Schmerzen NRS 9-10 deren Eintrittswahrschienlichkeit aber mit "noch nie passiert/Eintritt unplausibel" bewertet wurde. 
+Angesichts des Risikos einer Medikamentengabe ohne die Nutzung von Checklisten oder Merkhilfen wird dieses Risiko verhältnismäßig als azeptabel bewertet. Siehe dazu auch den Abschnitt "Bedingt akzeptables Restrisiko"
+
+#table(
+    columns: (1fr, auto, auto, auto),
+    align: (x,y) => if x>0 {left + horizon} else if y==0 {left + horizon} else {left + top},
+    stroke: none,
+    gutter: 0pt,
+
+    [Verbleibendes Restrisiko nach Mitigationsmaßnahmen],
+    [#riskrating("A2")], [#riskrating("W2")], [#riskrating(4)],
+)
+
+Lt. Definition enspricht dies vorübergehendem Unwohlsein oder Schmerzen NRS 4-5 mit einer Eintrittswahrschienlichkeit bewertet als "Unwahrscheinlich aber vorstellbar". Auch dies ist angesichts der Umstände im Rettungsdienst als akzeptabel anzunehmen.
+
+==== Bedingt akzeptables Restrisiko <bedingt-akzeptabel>
+Eine Sonderstellung nimmt die folgende Bewertung ein: 
+#table(
+    columns: (1fr, auto, auto, auto),
+    align: (x,y) => if x>0 {left + horizon} else if y==0 {left + horizon} else {left + top},
+    stroke: none,
+    gutter: 0pt,
+
+    [Verbleibendes Restrisiko nach Mitigationsmaßnahmen],
+    [#riskrating("A5")], [#riskrating("W1")], [#riskrating(5)],
+)
+
+In diesem Fall wurde die Eintrittswahrscheinlichkeit bereits auf das lt. Methodik erreichbare Minimum reduziert, das Schadensausmaß ist aber unverändert hoch. Es liegt in der Natur der Sache, im konkreten Fall handelt es sich um Unterlagen, die bei der Anwendung von Medikamenten in einem präklinischen notfallmedizinischen Setting unterstützen, dass durch einen hohen Sorgfaltsmaßstab und Mitigationsmaßnahmen meist nur die Wahrscheinlichkeit reduziert werden kann. 
+
+Das Schadensausmaß eines Fehlers ist durch eine auch noch so hohe Sorgfalt nicht reduzierbar, da eine Checkliste zwar die Wahrscheinlichkeit, nicht aber das Schadensausmaß einer fälschlichen (nicht-)Anwendung oder eines Dosierungsfehlers reduzieren kann. Dies bedeutet, dass in der folgenden Risikoanalyse eine Vielzhl an Risiken bei der oben beschriebenen Restrisikobewertung landen werden.
+
+Diese Risikoanalyse bewertet Risiken die durch die Anwendung einer Checkliste entstehen - wie z.B. eine falsche Dosierungsangabe auf der Checkliste. Ein solcher Fehler kann im schlimmsten Fall zu einer Vielzahl von Fehlanwendungen führen.
+
+Ohne Betrachtung der Ausgangslage würde alleine die hier aufgeführte Argumentation schon gegen die Implementierung von solchen Unterlagen sprechen. Die Ausgangslage ist aber ein präklinisches, notfallmedizinisches Setting. Dieses Setting definiert sich über die Dringlichkeit der Hilfe kombiniert mit erschwerenden Umständen (v.a. die ständig variierende, meist enge Arbeitsumgebung) und einem mangel an (v.a. Personal-)Ressourcen. All diese Faktoren führen zu einer deutlich erhöhten Fehlerwahrscheinlichkeit.
+
+Zur Reduktion dieser Fehlerwahrscheinlichkeiten sind Checklisten und Merkhilfen Konsens (siehe z.B. Faktor Mensch - Sicheres Handeln in kritischen Situationen, Kapitel 5.9). D.h. auch wenn die minimale Fehlerwahrscheinlichkeit lt. Bewertung immer noch ein zu hohes Restrisiko ergibt, kann angenommen werden, dass dieses Restrisiko immer noch geringer ist als das Risiko durch eine Medikamentengabe ohne eine Checkliste.
+
+Daher wird die Kombination aus #riskrating("A5") und #riskrating("W1") auch als akzeptables Restrisiko gewertet.
+
+
 
 #pagebreak()
 = Analyse
-=== Fehlerquellen
+=== Risiken
 #{
     show outline.entry: it => link(
         it.element.location(),
@@ -341,7 +404,7 @@ Tippfehler sind ohne weitere Kontrollmaßnahmen, insbesondere bei Zahlen als #ri
 )
 
 ==== Patient*innenschaden aufgrund von fehlender Angabe (Alters-/Gewichtsgrenzen, Indikation, Kontraindikation, Dosisangabe, Wiederholungen, ...) <analysis>
-Eine fehlende Indikation führt ggf. zu einer Nichtanwendung einer AML, 
+Die Indikationsangaben der AML des ASBÖ geben einerseits einen Titel für die Anwendung eines algorithmus an, und andererseits eine detailliertere Symptombeschreibung. Fehlen Teile dieser Angaben kann es sowohl zu fälschlicher Anwendung als auch fälschlicher Nichtanwendung kommen.
 #table(
     columns: (1fr, auto, auto, auto),
     align: (x,y) => if x>0 {left + horizon} else if y==0 {left + horizon} else {left + top},
@@ -350,6 +413,21 @@ Eine fehlende Indikation führt ggf. zu einer Nichtanwendung einer AML,
 
     [Initialbewertung],
     [#riskrating("A4")], [#riskrating("W4")], [#riskrating(20)],
+
+    [#underline("Mitigationsmaßnahme") #linebreak()
+    TODO],
+    [#riskrating("A5")], [#riskrating("W5")], [#riskrating(25)],
+)
+
+==== Copy Paste Fehler TODOTODO <analysis>
+#table(
+    columns: (1fr, auto, auto, auto),
+    align: (x,y) => if x>0 {left + horizon} else if y==0 {left + horizon} else {left + top},
+    stroke: none,
+    gutter: 0pt,
+
+    [Initialbewertung (TODO)],
+    [#riskrating("A5")], [#riskrating("W5")], [#riskrating(20)],
 
     [#underline("Mitigationsmaßnahme") #linebreak()
     TODO],
